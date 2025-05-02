@@ -1,6 +1,8 @@
 import os
 import shutil
 
+os.system("date")
+
 def list_files(directory):
     print(f"Files in {directory}:")
     for file_name in os.listdir(directory):
@@ -25,3 +27,4 @@ def list_files(directory):
 list_files("/var/log")
 # check_disk_usage()
 # archive_logs("/var/log", "/var/log/archived_logs")
+
