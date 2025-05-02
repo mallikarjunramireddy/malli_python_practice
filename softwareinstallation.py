@@ -2,7 +2,7 @@ import subprocess
 
 def install_package(package_name):
     try:
-        subprocess.run(["sudo", "apt-get", "install", "-y", package_name], check=True)
+        subprocess.run(["sudo", "yum", "install", "-y", package_name], check=True)
         print(f"Package {package_name} installed successfully.")
     except subprocess.CalledProcessError:
         print(f"Failed to install package {package_name}.")
