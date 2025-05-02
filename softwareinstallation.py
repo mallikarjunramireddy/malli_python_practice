@@ -9,7 +9,7 @@ def install_package(package_name):
 
 def check_package(package_name):
     try:
-        result = subprocess.run(["dpkg", "-l", package_name], check=True, text=True, capture_output=True)
+        result = subprocess.run(["sudo", "dpkg", "-l", package_name], check=True, text=True, capture_output=True)
         print(result.stdout)
     except subprocess.CalledProcessError:
         print(f"Package {package_name} is not installed.")
