@@ -26,5 +26,5 @@ def check_disk_usage():
 # Example usage
 list_files("/var/log")
 check_disk_usage()
-# archive_logs("/var/log", "/var/log/archived_logs")
+archive_logs("/var/log", "/var/log/archived_logs")
 
