@@ -9,3 +9,4 @@ def add_cron_job(job_command, schedule):
 
 # Example usage
 add_cron_job("python3 /home/ec2-user/malli_python_practice/name.py", "* * * * *")  # Run daily at 3 AM
+add_cron_job("python3 /home/ec2-user/malli_python_practice/sum_fun.py", "* * * * *")  # Run daily at 3 AM
