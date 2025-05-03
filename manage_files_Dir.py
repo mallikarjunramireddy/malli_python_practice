@@ -3,10 +3,10 @@ import shutil
 
 os.system("date")
 
-# def list_files(directory):
-#     print(f"Files in {directory}:")
-#     for file_name in os.listdir(directory):
-#         print(file_name)
+def list_files(directory):
+    print(f"Files in {directory}:")
+    for file_name in os.listdir(directory):
+        print(file_name)
 
 def check_disk_usage():
     usage = shutil.disk_usage("/")
@@ -24,7 +24,7 @@ def check_disk_usage():
 #             print(f"Archived: {file_name}")
 
 # Example usage
-# list_files("/var/log")
+list_files("/var/log")
 check_disk_usage()
 # archive_logs("/var/log", "/var/log/archived_logs")
 
