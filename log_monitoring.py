@@ -1,4 +1,5 @@
 import time
+import os
 
 def monitor_logs(log_file):
     with open(log_file, "r") as file:
