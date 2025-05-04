@@ -10,4 +10,4 @@ def terminate_high_cpu_process(threshold):
             continue
 
 # Example usage
-terminate_high_cpu_process(threshold=10)
+terminate_high_cpu_process(threshold=50)
