@@ -1,6 +1,5 @@
 import psutil
 
-log_file = "/var/log/process_cpu_log.txt"
 
 def terminate_high_cpu_process(threshold):
     for proc in psutil.process_iter(['pid', 'name', 'cpu_percent']):
@@ -12,4 +11,4 @@ def terminate_high_cpu_process(threshold):
             continue
 
 # Example usage
-terminate_high_cpu_process(threshold=50) >> log_file
+terminate_high_cpu_process(threshold=50) 
