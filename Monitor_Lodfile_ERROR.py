@@ -5,6 +5,6 @@ def monitor_log(logfile, error_keyword="ERROR"):
             if error_keyword in line:
                 print(f"Error found: {line.strip()}")
 if __name__ == "__main__":
-    # logfile = input("Enter the log file path: ")
+    logfile = input("Enter the log file path: ")
     keyword = input("Enter the keyword to search for (default: ERROR): ") or "ERROR"
-    monitor_log("/var/log/debug.txt", keyword)
+    monitor_log(logfile, keyword)
